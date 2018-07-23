@@ -373,16 +373,30 @@
   \fi\fi\fi\fi\fi}
 
 
+% IF PART OF A DEPARTMENT, USE THE FOLLOWING BLOCK AND USE \departmenten{} AND \departmentpt{} in the main text
+% \gdef\@presentationtext{%
+% \if\@language0
+% Trabalho apresentado ao Programa de
+% \@programpt\ do \if\@showdepartment1\@departmentpt\ \else\@institutept\ \fi
+% da \@universitypt\ como requisito parcial para obtenção do
+% grau de \@degree\ em \@majorfieldpt.
+% \fi
+% \if\@language1 %If language is English
+% A \@texttype{} presented to the \if\@showdepartment1\@departmenten\
+% \else\@instituteen\ \fi of \@universityen\ in partial fulfillment of the
+% requirements for the degree of \@degree\ in \@majorfielden.
+% \fi
+% }
+
 \gdef\@presentationtext{%
 \if\@language0
 Trabalho apresentado ao Programa de
-\@programpt\ do \if\@showdepartment1\@departmentpt\ \else\@institutept\ \fi
+\@programpt\
 da \@universitypt\ como requisito parcial para obtenção do
 grau de \@degree\ em \@majorfieldpt.
 \fi
 \if\@language1 %If language is English
-A \@texttype{} presented to the \if\@showdepartment1\@departmenten\
-\else\@instituteen\ \fi of \@universityen\ in partial fulfillment of the
+A \@texttype{} presented to the \@universityen\ in partial fulfillment of the
 requirements for the degree of \@degree\ in \@majorfielden.
 \fi
 }
