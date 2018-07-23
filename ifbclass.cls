@@ -1,7 +1,7 @@
-%% IFBthesis Latex Template - version 1.1
+%% ifbclass Latex Class
 %%
-%% IFBthesis's latex template for thesis and dissertations
-%% https://github.com/IFBmodels/tcc
+%% ifbclass's latex template for thesis, dissertations, academic assignments and related work
+%% https://github.com/IFBmodels/ifbclass
 %%
 %% (c) 2017 Rafael de Campos Passos (rafae@rcpassos.me)
 %%
@@ -11,7 +11,7 @@
 %%
 %%
 
-\ProvidesClass{ifbthesis}[2018/04/11]
+\ProvidesClass{ifbclass}[2018/07/23]
 
 %% OPTIONS
 
@@ -67,7 +67,7 @@
   \let\@linespacing=2}
 
 % Default options
-\ExecuteOptions{pt,msc,print}
+\ExecuteOptions{pt,bsc,print}
 \ProcessOptions
 
 \LoadClass[12pt,a4paper]{book}
@@ -96,7 +96,7 @@
 \RequirePackage{setspace}
 \RequirePackage[top=3.00cm,left=3.00cm,bottom=2.00cm,right=2.00cm]{geometry}
 \RequirePackage[calcwidth]{titlesec}
-\RequirePackage{psboxit}
+\RequirePackage{ifbclass/libs/psboxit}
 \RequirePackage[avantgarde]{quotchap}
 \RequirePackage[nottoc, notlof, notlot]{tocbibind}
 \RequirePackage{indentfirst}
@@ -183,8 +183,8 @@
   \gdef\@listacronymname{Acrônimos}
   \gdef\@colophontext{%
   \urlstyle{rm}%
-  Este volume foi tipografado em \LaTeX\ na classe \textsf{ifbthesis}
-  (\url{http://github.com/auyer/IFBtcc}).
+  Este volume foi tipografado em \LaTeX\ na classe \textsf{ifbclass}
+  (\url{https://github.com/IFBmodels/ifbclass}).
   \if\@scr1
   Para detalhes sobre este documento, clique \Acrobatmenu{GeneralInfo}{aqui}.
   \fi}
@@ -234,8 +234,8 @@
   \gdef\@listacronymname{Acronyms}
   \gdef\@colophontext{%
   \urlstyle{rm}%
-  This volume has been typeset in \LaTeX with the \textsf{ifbthesis} class
-  (\url{https://github.com/auyer/IFBtcc}).
+  This volume has been typeset in \LaTeX with the \textsf{ifbclass} class
+  (\url{https://github.com/IFBmodels/ifbclass}).
   \if\@scr1
   For details about this document, click \Acrobatmenu{GeneralInfo}{here}.
   \fi}
@@ -259,7 +259,7 @@
   \gdef\@campus{#1}}
 \def\@campus{\textit{Campus} Taguatinga}
 
-\def\universitylogo{images/ifblogo.tex}
+\def\universitylogo{ifbclass/images/ifblogo}
 
 \let\@showinstitute=0
 \def\institutept#1{%
@@ -476,7 +476,7 @@ requirements for the degree of \@degree\ in \@majorfielden.
 \newenvironment{references}
 {
 	\backmatter
-	\bibliographystyle{ifblibs/abnt}
+	\bibliographystyle{ifbclass/libs/abnt}
 	\setlength{\bibhang}{0pt}
 	\singlespacing % Change to singlespacing for the references
 	\begingroup
@@ -506,7 +506,7 @@ requirements for the degree of \@degree\ in \@majorfielden.
   \if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{empty}
   \begin{center}
-  \includegraphics[scale=0.5]{images/ifblogo} \\
+  \includegraphics[scale=0.5]{ifbclass/images/ifblogo} \\
   \if\@language0
     {\fontfamily{times}\selectfont \small \@universitypt\\}
     {\fontfamily{times}\selectfont \small \@programpt\\}
@@ -623,7 +623,7 @@ requirements for the degree of \@degree\ in \@majorfielden.
 		III. Faculdade de xxx.
 		IV. Título\\
 
-	\hspace{8.75cm} CDU 02:141:005.7\\
+	\hspace{8.75cm} CDU 02:141:005.7\\ % TODO: correct CDU
 
 	\end{minipage}
 	\end{center}
@@ -647,22 +647,22 @@ requirements for the degree of \@degree\ in \@majorfielden.
 
   -----------------------------------------------------------------------\\
   Prof. Fabiano Cavalcanti Fernandes\\
-  Departamento de Computação/IFB
+  Computação/IFB
 
   \vspace{\baselineskip}
   -----------------------------------------------------------------------\\
   Prof. Leandro Vaguetti \\
-  Departamento de Computação/IFB
+  Computação/IFB
 
   \vspace{\baselineskip}
   -----------------------------------------------------------------------\\
   Prof. Roberto Duarte Fontes\\
-  Departamento de Computação/IFB
+  Computação/IFB
 
   \vspace{\baselineskip}
   -----------------------------------------------------------------------\\
   Prof. Raimundo Cláudio da Silva Vasconcelos\\
-  Departamento de Computação/IFB
+  Computação/IFB
 
   \vspace{\baselineskip}
   -----------------------------------------------------------------------\\
