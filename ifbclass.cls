@@ -623,7 +623,7 @@ requirements for the degree of \@degree\ in \@majorfielden.
 		III. Faculdade de xxx.
 		IV. Título\\
 
-	\hspace{8.75cm} CDU 02:141:005.7\\ % TODO: correct CDU
+	\hspace{8.75cm} CDU 004\\ % TODO: correct CDU
 
 	\end{minipage}
 	\end{center}
@@ -637,9 +637,9 @@ requirements for the degree of \@degree\ in \@majorfielden.
   \if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{empty}
   \noindent
-  Trabalho de Graduação apresentada por \textbf{\@author} ao programa de Graduação em
-  Ciência da Computação do Instituto Federal de Brasília, sob o título \textbf{\@title}, orientada pelo \textbf{Prof.
-  \@adviser} e aprovada pela banca examinadora formada pelos professores:
+  Trabalho de Graduação apresentado por \textbf{\@author} ao programa de Graduação em
+  Ciência da Computação do Instituto Federal de Brasília, sob o título \textbf{\@title}, orientado pelo \textbf{Prof.
+  \@adviser} e aprovado pela banca examinadora formada pelos professores:
 
   \vspace{5\baselineskip}
 
