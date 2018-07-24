@@ -680,8 +680,8 @@ requirements for the degree of \@degree\ in \@majorfielden.
 
   \vspace{\baselineskip}
   -----------------------------------------------------------------------\\
-  Prof. Djamel Fawzi Hadj Sadok\\
-  Centro de Informática/UFPE
+  Prof. Daniel Saad Nogueira Nunes\\
+  Computação/IFB
 
   \vfill
   \@address
