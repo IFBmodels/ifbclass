@@ -176,7 +176,8 @@
   \renewcommand{\bibname}{\bibliographytocname}
   \renewcommand{\appendixtocname}{Apêndice}
   \renewcommand{\appendixpagename}{Apêndice}
-  \gdef\@lstlistingname{Lista deAlgoritmos}
+  \renewcommand{\lstlistingname}{Bloco de Código}
+  \gdef\@lstlistingname{Lista de Blocos de Código}
   \gdef\@listoftablesname{Lista de Tabelas}
   \gdef\@listoffiguresname{Lista de Figuras}
   \gdef\@pagename{página}
@@ -224,7 +225,8 @@
   \gdef\@tocname{Contents}
   \gdef\@listoftablesname{List of Tables}
   \gdef\@listoffiguresname{List of Figures}
-  \gdef\@lstlistingname{List of Algorithms}
+  \renewcommand{\lstlistingname}{Code Snippet}
+  \gdef\@lstlistingname{List of Code Snippets}
   \renewcommand{\appendixtocname}{Appendix}
   \renewcommand{\appendixpagename}{Appendix}
   \newcommand\bibliographytocname{References}
