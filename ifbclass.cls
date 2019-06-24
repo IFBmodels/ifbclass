@@ -214,6 +214,7 @@
   \gdef\@lemmaname{Lemma}
   \gdef\@theoname{Theorem}
   \gdef\@propname{Proposition}
+  
   \gdef\@corname{Corollary}
   \gdef\@proofname{Proof}
   \gdef\@figurename{Figure}
@@ -251,7 +252,7 @@
 
 \def\universitypt#1{%
   \gdef\@universitypt{#1}}
-\def\@universitypt{Instituto Federal de Brasília}
+\def\@universitypt{Instituto Federal de Educação, Ciência e Tecnologia de Brasília}
 
 \def\universityen#1{%
   \gdef\@universityen{#1}}
@@ -392,9 +393,8 @@
 
 \gdef\@presentationtext{%
 \if\@language0
-Trabalho apresentado ao Programa de
-\@programpt\
-da \@universitypt\ como requisito parcial para obtenção do
+Trabalho apresentado ao Curso de
+\@majorfieldpt\ do \@universitypt\ como requisito parcial para obtenção do
 grau de \@degree\ em \@majorfieldpt.
 \fi
 \if\@language1 %If language is English
@@ -525,11 +525,12 @@ requirements for the degree of \@degree\ in \@majorfielden.
   \includegraphics[scale=0.5]{ifbclass/images/ifblogo} \\
   \if\@language0
     {\fontfamily{times}\selectfont \small \@universitypt\\}
-    {\fontfamily{times}\selectfont \small \@programpt\\}
     {\fontfamily{times}\selectfont \small \@campus\\}
+    
+%    {\fontfamily{times}\selectfont \small \@programpt\\}
   \else
     {\fontfamily{times}\selectfont \small \@universityen\\}
-    {\fontfamily{times}\selectfont \small \@programen\\}
+    {\fontfamily{times}\selectfont \small \@programen\\}e
     {\fontfamily{times}\selectfont \small \@campus\\}
   \fi
   \vfill
@@ -653,9 +654,8 @@ requirements for the degree of \@degree\ in \@majorfielden.
   \if@openright\cleardoublepage\else\clearpage\fi
   \thispagestyle{empty}
   \noindent
-  Trabalho de Graduação apresentado por \textbf{\@author} ao programa de Graduação em
-  Ciência da Computação do Instituto Federal de Brasília, sob o título \textbf{\@title}, orientado pelo \textbf{Prof.
-  \@adviser} e aprovado pela banca examinadora formada pelos professores:
+  Trabalho de Graduação apresentado por \textbf{\@author} ao curso de \@majorfieldpt\
+  do \@universitypt\, sob o título \textbf{\@title}, orientado pelo \textbf{Prof. \@adviser} e aprovado pela banca examinadora formada pelos professores:
 
   \vspace{5\baselineskip}
 
