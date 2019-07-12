@@ -4,7 +4,7 @@ Universal and Flexible LaTeX Class for IFBs Projects.
 To add this class to your project, run the command:
 
 ```bash
-git submodule add https://github.com/auyer/IFBclass ifbclass/
+git submodule add https://github.com/IFBmodels/ifbclass ifbclass/
 ````
 and set ifbclass as the document class like this:
 
